@@ -171,6 +171,7 @@
     </style>
 </head>
 <body>
+    <typebot-standard style="width: 100%; height: 600px; "></typebot-standard>
     <div class="background-pattern"></div>
     <div class="zen-circle"></div>
     
@@ -187,7 +188,17 @@
         <div class="decorative-line"></div>
     </div>
 
-    <script src="//code.tidio.co/iglcbnamkdudpt5yrorg3senrdddspxh.js" async></script>
+   <!-- <script src="//code.tidio.co/iglcbnamkdudpt5yrorg3senrdddspxh.js" async></script> -->
+    <script>
+        const typebotInitScript = document.createElement("script");
+        typebotInitScript.type = "module";
+        typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js'
+  
+        Typebot.initStandard({ typebot: "customer-support-3l60bam" });
+        `;
+        document.body.append(typebotInitScript);
+    </script>
 
 </body>
 </html>
+
